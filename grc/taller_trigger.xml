@@ -1,0 +1,30 @@
+<block>
+  <name>Trigger</name>
+  <key>taller_trigger</key>
+  <category>[TALLER]</category>
+  <import>import taller</import>
+  <make>taller.trigger($nivel, $pendiente, $muestras)</make>
+  <param>
+    <name>Nivel</name>
+    <key>nivel</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Pendiente</name>
+    <key>pendiente</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Muestras</name>
+    <key>muestras</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

@@ -1,0 +1,20 @@
+<block>
+  <name>Potencia</name>
+  <key>taller_potencia</key>
+  <category>[TALLER]</category>
+  <import>import taller</import>
+  <make>taller.potencia($exponente)</make>
+  <param>
+    <name>Exponente</name>
+    <key>exponente</key>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

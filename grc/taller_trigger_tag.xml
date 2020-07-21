@@ -1,0 +1,31 @@
+<block>
+  <name>Trigger tag</name>
+  <key>taller_trigger_tag</key>
+  <category>[TALLER]</category>
+  <import>import taller</import>
+  <make>taller.trigger_tag($nivel, $pendiente)</make>
+  <callback>set_nivel_pendiente($nivel,$pendiente)</callback>
+  <param>
+    <name>Nivel</name>
+    <key>nivel</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Pendiente</name>
+    <key>pendiente</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <sink>
+    <name>nivel</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

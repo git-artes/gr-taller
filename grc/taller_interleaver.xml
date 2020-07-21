@@ -1,0 +1,22 @@
+<block>
+  <name>Interleaver</name>
+  <key>taller_interleaver</key>
+  <category>[TALLER]</category>
+  <import>import taller</import>
+  <make>taller.interleaver($orden)</make>
+  <param>
+    <name>Orden</name>
+    <key>orden</key>
+    <type>int_vector</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>len($orden)</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>len($orden)</vlen>
+  </source>
+</block>

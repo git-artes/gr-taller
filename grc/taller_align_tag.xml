@@ -1,0 +1,20 @@
+<block>
+  <name>Align tag</name>
+  <key>taller_align_tag</key>
+  <category>[TALLER]</category>
+  <import>import taller</import>
+  <make>taller.align_tag($muestras)</make>
+  <param>
+    <name>Muestras</name>
+    <key>muestras</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
